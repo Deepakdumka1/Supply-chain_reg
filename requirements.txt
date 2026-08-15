@@ -1,0 +1,21 @@
+# Core RAG stack
+openai>=1.40.0
+chromadb>=0.5.5
+langchain-text-splitters>=0.2.0
+pypdf>=4.2.0
+python-dotenv>=1.0.1
+
+# User interface
+streamlit>=1.36.0
+
+# FastAPI backend (Stage 10 bonus)
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+requests>=2.31.0
+
+# Used only by scripts/make_sample_documents.py to build the two source PDFs
+reportlab>=4.1.0
+
+# Optional: local provider, needed only when PROVIDER=ollama
+ollama>=0.4.0
